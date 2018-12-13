@@ -1,0 +1,40 @@
+.sideMenu{
+    width: 300px;
+    background: #0e1a35;
+    height: 100vh;
+    float: left;
+}
+.logo{
+    height: 120px;
+}
+.menu{
+    padding: 0;
+}
+.menu>li{
+    list-style: none;
+    padding-left: 90px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #0d172e;
+}
+.menu>li>a{
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-decoration: none;
+}
+.menu>li:hover{
+    background: #122143;
+    border-left: 2px solid #5584ff;
+}
+.menu>li>ul>li{
+    list-style: none;
+    padding-left: 90px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #0d172e;
+    display: none;
+}
+.menu>li>ul>li:{}
