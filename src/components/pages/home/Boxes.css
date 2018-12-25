@@ -1,0 +1,54 @@
+.sales-box, .visitors-box, .members-box, .orders-box {
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 250px;
+    height: 125px;
+    background: linear-gradient(to right, #11caef, #1174ef);
+}
+
+.sales-header-box, .visitors-header-box, .members-header-box, .orders-header-box {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sales-box i, .visitors-box i, .members-box i, .orders-box i {
+    font-size: 50px;
+    margin-left: 10px;
+    color: #fb8c00;
+    opacity: 0.7;
+}
+
+.sales-box-body, .visitors-box-body, .members-box-body, .orders-box-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales-box span, .visitors-box span, .members-box span, .orders-box span {
+    font-size: 50px;
+    margin-right: 10px;
+    color: yellow;
+    opacity: 0.7;
+}
+
+.visitors-box {
+    background: linear-gradient(to right, #5f71e4, #815fe4);
+}
+
+.members-box {
+    background: linear-gradient(to right, #f5375a, #f55e37);
+}
+
+.orders-box {
+    background: linear-gradient(to right, #172a4d, #1a184d);
+}
+
+.now-visitor-box,.notification {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+}

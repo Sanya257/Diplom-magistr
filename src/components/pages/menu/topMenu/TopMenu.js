@@ -6,8 +6,15 @@ class TopMenu extends React.Component {
            <>
                <header className='top-header'>
                    <nav>
-                       <a href='/' className='menu'>d</a>
-                       <a href='da' className='userIcon'>icon</a>
+                       <button className="fas fa-bars"></button>
+                       <div className='user-panel'>
+                       <button className='add-notification'>add notification</button>
+                       <button className="fas fa-bell"><div>1</div></button>
+                       <div className='user-icon'>
+                           <button className="user-logo"></button>
+                           <h4 className="user-name">Oleksandr Kutsopatruy</h4>
+                       </div>
+                       </div>
                    </nav>
                </header>
            </>

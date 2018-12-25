@@ -1,6 +1,71 @@
-.top-header{
+.top-header {
     max-width: 1920px;
     height: 100px;
-    border: 1px solid black;
+    border: none;
+    border-bottom: 2px solid #f6f7fa;
     margin-left: 300px;
+}
+.top-header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fa-bars {
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 40px;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 10px;
+    outline: none;
+}
+.user-icon{
+    margin-top: 10px;
+
+}
+.user-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(/image/sanya.jpg);
+    background-size: 60px;
+    border: none;
+    outline: none;
+    float: left;
+}
+.user-name{
+    margin: 0;
+}
+.fa-bell{
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    font-size: 24px;
+    border: none;
+    background: white;
+    outline: none;
+}
+.fa-bell div{
+    position: absolute;
+    font-size: 15px;
+    font-weight: normal;
+    background: #5584ff;
+    border-radius: 24px;
+    top:15px;
+    right: 180px;
+    height: 15px;
+    width: 15px;
+}
+.add-notification{
+    font-size: 20px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background-color: #5584ff;
+    font-family: Roboto;
+}
+.user-panel{
+    display: flex;
+    align-items: center;
 }

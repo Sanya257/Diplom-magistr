@@ -1,9 +1,11 @@
 .home-section{
 width: 100vw;
-    border: 3px solid white;
 margin-left: 300px;
+    background-color: #f6f7fa;
 }
-.st1{
-
+.statistic-box-item{
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
 
 }

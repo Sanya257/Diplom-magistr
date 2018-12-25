@@ -1,7 +1,7 @@
 .sideMenu{
     width: 300px;
     background: #0e1a35;
-    height: 100vh;
+    min-height: 100vh;
     float: left;
 }
 .logo{
@@ -11,30 +11,34 @@
     padding: 0;
 }
 .menu>li{
-    list-style: none;
-    padding-left: 90px;
-    height: 50px;
-    border: none;
     border-bottom: 1px solid #0d172e;
 }
-.menu>li>a{
+.menu a{
     color: #ffffff;
     font-family: Roboto;
     font-size: 24px;
     font-weight: 500;
     line-height: 48px;
+    padding-left: 90px;
     text-decoration: none;
+    display: block;
 }
-.menu>li:hover{
+.menu a:hover{
     background: #122143;
     border-left: 2px solid #5584ff;
 }
-.menu>li>ul>li{
-    list-style: none;
-    padding-left: 90px;
-    height: 50px;
-    border: none;
-    border-bottom: 1px solid #0d172e;
+.team-menu ul{
     display: none;
+    list-style: none;
+    padding: 0;
 }
-.menu>li>ul>li:{}
+.team-menu ul li{
+    border-bottom: 1px solid #0d172e;
+}
+.drop ul{
+    display: block;
+}
+.team-menu>ul a{
+    font-size: 15px;
+
+}
