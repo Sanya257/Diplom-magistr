@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './Login.css';
 class Login extends React.Component {
-    handleLogin=(e)=>{
-e.preventDefault();
+    handleLogin=()=>{
         const data={
             login:this.login.value.trim(),
             pass:this.pass.value.trim()
@@ -22,7 +22,7 @@ e.preventDefault();
     };
     render(){
         return(
-          <section>
+          <section className='login-section'>
               <header>
                   <nav>
                       <ul>
@@ -32,9 +32,9 @@ e.preventDefault();
                   </nav>
               </header>
               <h1>Sign in</h1>
-              <form onSubmit={this.handleLogin}>
-                  <input type="text" placeholder='Username' ref={el=>this.login=el}/>
-                  <input type="text" placeholder='Password' ref={el=>this.pass=el}/>
+              <form onSubmit={this.handleLogin} method='post'>
+                  <input type="text" placeholder='Username' name='username' ref={el=>this.login=el}/>
+                  <input type="text" placeholder='Password' name='password' ref={el=>this.pass=el}/>
                   <button >Enter</button>
               </form>
           </section>

@@ -15,8 +15,8 @@ import Smm from './components/pages/teams/Smm';
 import Programmer from './components/pages/teams/Programmer';
 import Designers from './components/pages/teams/Designers';
 import Content from './components/pages/teams/Content';
-import Register from './components/pages/Register';
-import Login from './components/pages/Login';
+import Register from './components/pages/register/Register';
+import Login from './components/pages/login/Login';
 import DefaultLayout from './components/Layouts/DefaultLayout';
 import LoginLayout from "./components/Layouts/LoginLayout";
 class App extends React.Component {

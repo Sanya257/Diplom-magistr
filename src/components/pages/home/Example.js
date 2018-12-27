@@ -15,9 +15,8 @@ const last30days = {
     chart: {
         type: "LINE",
         options: {
-            // options for google charts
-            // https://google-developers.appspot.com/chart/interactive/docs/gallery
-            title: "Last 30 days pageviews"
+            title: "Last 30 days pageviews",
+                width: '100%'
         }
     }
 }
@@ -32,7 +31,11 @@ const last7days = {
         "end-date": "yesterday"
     },
     chart: {
-        type: "LINE"
+        type: "LINE",
+        options: {
+            width: '100%',
+            pieHole: 5/9
+        }
     }
 }
 const last2days = {

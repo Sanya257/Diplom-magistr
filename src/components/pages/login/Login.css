@@ -1,0 +1,67 @@
+.login-section{
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+.login-section header{
+    background: #0e1a35;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.login-section header nav ul{
+    margin: 0;
+    padding: 0;
+}
+.login-section header nav ul li{
+    list-style: none;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+.login-section header nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 48px;
+}
+.login-section header nav ul li a:hover{
+    border-bottom: 2px solid #5584ff;
+}
+/*body*/
+.login-section h1{
+    text-align: center;
+}
+.login-section form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+}
+.login-section form input{
+    margin-top: 10px;
+    font-size: 24px;
+    border: none;
+    border-bottom: 1px solid #d4d9e3;
+    outline: none;
+}
+.login-section form input::placeholder{
+    color: #5584ff;
+}
+.login-section form button{
+    font-size: 20px;
+    width: 200px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background-color: #5584ff;
+    font-family: Roboto;
+    margin-top: 50px;
+}

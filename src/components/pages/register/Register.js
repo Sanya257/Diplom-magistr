@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import './Register.css'
 class Register extends React.Component {
     render(){
         return(
-            <section>
+            <section className='register-section'>
                 <header>
                     <nav>
                         <ul>
