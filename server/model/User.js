@@ -3,21 +3,10 @@ const Schema=mongoose.Schema;
 const User = new Schema({
     name:{
         type: String,
-        required:true
+
     },
-    age:{
-        type: Number,
-        min:18,
-        max:90,
-        default:20
-    },
-    phones:{
-        type:[Number],
-        default: []
-    },
-    isMarried:{
-        type:Boolean,
-        default:false
+    age: {
+        type: String,
     }
 });
-mongoose.model('Users',User);
+module.exports=mongoose.model('Users',User);
