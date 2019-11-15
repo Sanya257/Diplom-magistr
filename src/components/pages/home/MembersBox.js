@@ -9,7 +9,7 @@ class MembersBox extends React.Component {
                 </header>
                 <div className="sales-box-body">
                     <i className="fas fa-users"></i>
-                    <span>1</span>
+                    <span>623</span>
                 </div>
             </div>
 

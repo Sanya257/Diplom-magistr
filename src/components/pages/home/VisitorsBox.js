@@ -10,7 +10,7 @@ class VisitorsBox extends React.Component {
                 </header>
                 <div className="sales-box-body">
                     <i className="fas fa-eye"></i>
-                    <span>1</span>
+                    <span>123</span>
                 </div>
             </div>
 

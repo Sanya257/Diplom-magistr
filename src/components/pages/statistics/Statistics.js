@@ -5,7 +5,9 @@ class Statistics extends React.Component {
     render(){
         return(
            <>
-               <div className='session'><Example/></div>
+               <div className='session'>
+                   <Example/>
+               </div>
            </>
         )
     }

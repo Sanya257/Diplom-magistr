@@ -10,7 +10,7 @@ class OrdersBox extends React.Component {
                 </header>
                 <div className="orders-box-body">
                     <i className="fas fa-shopping-cart"></i>
-                    <span>1</span>
+                    <span>46</span>
                 </div>
             </div>
 

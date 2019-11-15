@@ -27,9 +27,10 @@ this.setState({dropMenu:!this.state.dropMenu});
                     <nav>
                         <ul className='menu'>
                             <li><Link to='/'><img src='/image/home-icon.png' alt='icon'/>Home</Link></li>
-                            <li><Link to='/statistics'>Statistics</Link></li>
-                            <li><Link to='/calendar'>Calendar</Link></li>
-                            <li className={`team-menu ${drop}`} onClick={this.dropdown}><a href='#'>Teams</a>
+                            <li><Link to='/statistics'><img src='/image/statistic-icon.png' alt='icon'/>Statistics</Link></li>
+                            <li><Link to='/calendar'><img src='/image/calendar-icon.png' alt='icon'/>Calendar</Link></li>
+                            <li className={`team-menu ${drop}`} onClick={this.dropdown}><a href='#'><i
+                                className="fas fa-users" style={{color: "#4772dd"}}></i>Teams</a>
                                 <ul>
                                     <li><Link to='/seo-team'>SEO-Specialist</Link></li>
                                     <li><Link to='/ppc-team'>PPC Specialist</Link></li>
@@ -40,9 +41,9 @@ this.setState({dropMenu:!this.state.dropMenu});
                                     <li><Link to='/design-team'>Designers</Link></li>
                                 </ul>
                             </li>
-                            <li><Link to='/chat'>Chat</Link></li>
-                            <li><Link to='/users'>Users</Link></li>
-                            <li><Link to='settings'>Settings</Link></li>
+                            <li><Link to='/chat'><i className="far fa-comment-alt" style={{color: "#4772dd"}}></i>Chat</Link></li>
+                            <li><Link to='/users'><img src='/image/user-icon.png' alt='icon'/>Users</Link></li>
+                            <li><Link to='settings'><img src='/image/settings-icon.png' alt='icon'/>Settings</Link></li>
                         </ul>
                     </nav>
                 </section>

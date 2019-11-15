@@ -1,8 +1,44 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import './Login.css';
 class Login extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+           chekLogin: false
+        }
+    }
+    handleClick= (e)=>{
+        e.preventDefault();
+        const data = {
+            login: this.login.value.trim(),
+            password: this.pass.value.trim(),
+        };
+      fetch('api/views',{
+          headers: {
+              "Content-type": "application/json"
+          },
+          method:'post',
+          body:JSON.stringify(data)
+      }).then(res=>{
+          debugger;
+          return res.json();
+      }).then(e=>{
+          if (e.login && e.password){
+            sessionStorage.setItem('login',true);
+            this.setState({chekLogin: true});
+          } else{
+              alert("pososi");
+          }
+      });
+
+    };
     render(){
+        if(this.state.chekLogin) {
+
+          return  <Redirect to='/'/>
+
+        }
         return(
           <section className='login-section'>
               <header>
@@ -14,11 +50,11 @@ class Login extends React.Component {
                   </nav>
               </header>
               <h1>Sign in</h1>
-              <form method='post'>
-                  <input type="text" placeholder='Username'/>
-                  <input type="text" placeholder='Password'/>
+              <form method>
+                  <input type="text" placeholder='Login' ref={elem=> this.login=elem}/>
+                  <input type="text" placeholder='Password'ref={elem=> this.pass=elem}/>
                   <input type="text" placeholder='Token'/>
-                  <button>Enter</button>
+                  <button onClick={this.handleClick}>Enter</button>
               </form>
           </section>
         )

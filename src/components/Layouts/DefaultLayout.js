@@ -5,7 +5,7 @@ import SideMenu from "../pages/menu/sideMenu/SideMenu";
 const DefaultLayout = ({component: Component, ...rest}) => {
     return (
         <Route {...rest} render={matchProps => {
-            if(localStorage.getItem('checkUser')){
+            if(sessionStorage.getItem('login')){
                 return (
                     <div>
                         <SideMenu/>

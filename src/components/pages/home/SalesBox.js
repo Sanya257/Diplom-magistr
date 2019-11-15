@@ -9,7 +9,7 @@ class SalesBox extends React.Component {
 </header>
 <div className="sales-box-body">
     <i className="fas fa-shopping-bag"></i>
-    <span>1</span>
+    <span>752</span>
 </div>
             </div>
         )

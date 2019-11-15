@@ -36,7 +36,7 @@ class App extends React.Component {
                         <DefaultLayout exact path='/smm-team' component={Smm}/>
                         <DefaultLayout exact path='/sales-team' component={Sales}/>
                         <DefaultLayout exact path='/content-team' component={Content}/>
-                        <DefaultLayout exact path='/programmer' component={Programmer}/>
+                        <DefaultLayout exact path='/programmer-team' component={Programmer}/>
                         <DefaultLayout exact path='/design-team' component={Designers}/>
                         <Route exact path='/register' component={Register}/>
                         <LoginLayout exact path='/login' component={Login}/>

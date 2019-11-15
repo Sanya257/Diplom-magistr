@@ -1,0 +1,31 @@
+.fullname, .phone, .email, .online, .offline, .position{
+    border-left: 2px solid yellow;
+    height: 50px;
+    width: 250px;
+  background: #3a3e52;
+margin-bottom: 20px;
+    color: white;
+    font-family: Roboto;
+   text-align: center;
+
+}
+.offline{
+    color: red;
+}
+.online{
+    color: greenyellow;
+}
+.fullname{
+    margin-left: 140px;
+}
+.table1{
+    border: 1px black solid;
+background: #2b2d3c;
+
+display: flex;
+    justify-content: flex-start;
+}
+.headerUser{
+    display: flex;
+    justify-content: space-evenly;
+}
